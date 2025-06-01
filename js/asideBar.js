@@ -1,5 +1,6 @@
 (function(){
 
+
      var obtenerSucesos = function(){
             // Obtener la fecha actual (mes y día)
         const fecha = new Date();
@@ -7,6 +8,10 @@
         const dia = String(fecha.getDate()).padStart(2, '0');
 
         var asideBar = document.getElementById("asideBar");
+
+         var loadBar = document.getElementById("contenedorCarga");
+            loadBar.style.display = 'block';
+         
 
     // Construir la URL de la API
     const url = `https://api.wikimedia.org/feed/v1/wikipedia/es/onthisday/all/${mes}/${dia}`;
@@ -20,7 +25,9 @@
             return response.json();
         })
         .then(data => {
-            let htmlPaises = '';
+            setTimeout(() => {
+          
+                let htmlPaises = '';
             //console.log("🎉 Eventos históricos del día:");
             
             var contador = 0;
@@ -36,6 +43,7 @@
             <div class="contenedorSuceso">
             <p class="tituloYearSuceso">Año: ${evento.year}</p>
             <p>${evento.text}</p>
+            <p></p>
             </div>
 
             `;
@@ -45,16 +53,29 @@
             
             });
 
+            
+           loadBar.style.display = 'none';
+           asideBar.innerHTML += htmlPaises;
 
-            asideBar.innerHTML += htmlPaises;
+
+        }, 1500); // 2 segundos de espera para simular carga
+        
+
+            
            
+            
         })
         .catch(error => {
             console.error("❌ Error:", error);
         });
 
+       
      };
 
-     obtenerSucesos();
+
+    obtenerSucesos();
+   
+ 
+     
 
 }())
