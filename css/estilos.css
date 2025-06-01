@@ -67,7 +67,7 @@ body{
     float: right;
     box-shadow: inset 5px 0 5px -5px #29627e;
     font-style: italic;
-    color: #29627e;
+    color: #229c8d;
     background: rgba(255, 255, 255, 0.9);
     padding: 10px;
     font-family: "Montserrat", Arial;
@@ -88,4 +88,48 @@ body{
 
 .tituloYearSuceso{
     font-size: 20px;
+}
+
+/********************/
+
+.contenedorCarga{
+ 
+    /*background: rgba(250,240,245,0.9);*/
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+
+.carga{
+    border: 5px solid #ddd;
+    border-top-color: #229c78;
+    border-top-style: solid;
+   
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+    
 }
