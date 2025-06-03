@@ -42,8 +42,8 @@
             htmlPaises += `
             <div class="contenedorSuceso">
             <p class="tituloYearSuceso">Año: ${evento.year}</p>
-            <p>${evento.text}</p>
-            <p></p>
+            <p class="explicacionSuceso">${evento.text}</p>
+            <p class="divisorSuceso"></p>
             </div>
 
             `;
