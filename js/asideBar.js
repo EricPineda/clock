@@ -35,8 +35,9 @@
             //console.log(`📅 Año: ${evento.year}`);
             //console.log(`📖 Evento: ${evento.text}`);
             //console.log('--------------------');
-            
-            if(contador<3){
+
+            const random = getRandom(0, 1);
+            if(contador<3 && random == 1){
                 contador ++;
 
             htmlPaises += `
@@ -45,8 +46,8 @@
             <p class="explicacionSuceso">${evento.text}</p>
             <p class="divisorSuceso"></p>
             </div>
-
             `;
+
             }else{
                 return;
             }
@@ -58,7 +59,7 @@
            asideBar.innerHTML += htmlPaises;
 
 
-        }, 1500); // 2 segundos de espera para simular carga
+        }, 1500); // 1.5 segundos de espera para simular carga
         
 
             
@@ -75,7 +76,18 @@
 
     obtenerSucesos();
    
- 
+ /******************** */
+ //Función para números aleatorios.
+    const getRandom= (min, max) => {
+    min = Math.ceil(min)
+    max = Math.floor(max)
+
+    return Math.round(Math.random())
+    }
+
+/******************** */
+
+
      
 
 }())
