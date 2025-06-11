@@ -1,0 +1,114 @@
+.flex{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", Arial;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: rgba(0,0,0,0.452);
+  width: 100%;
+}
+
+
+.contenido-modal{
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  width: 50%;
+  box-shadow: 0 0 6px 0 rgba(0,0,0, .4);
+  animation-name: modal;
+  animation-duration: 1s;
+  color:#000;
+  max-width: 700px;
+  height: 400px;
+}
+
+@keyframes modal {
+  from{top:-330px; opacity: 0;}
+  to{top:0;opacity: 1;}
+}
+
+.close{
+  color: #d3d2d2;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover{
+  color:#f6f5f5;
+  cursor: pointer;
+  
+}
+
+.modal-header{
+  padding: 8px 16px;
+  background: #224c75;
+  color:#f2f2f2;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.modal-header h3{
+  font-weight: 400;
+}
+
+.modal-footer{
+  padding: 8px 16px;
+  background: #34495e;
+  color:#f2f2f2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.modal-body{
+  /*padding: 20px 16px;*/
+}
+
+.contenedorPreview{
+  display: flex;
+ /* width: 100%;*/
+  justify-content: center;
+  margin: 10px 0 10px 0;
+}
+
+.imgPreview{
+  width: 150px;
+  height: 150px;
+}
+
+.contenedorBtnAceptar{
+  display: flex;
+  justify-content: center;
+}
+
+.css-button-sharp--grey {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 2px solid #495057;
+  background: #495057;
+  font-family: "Montserrat", Arial;
+}
+.css-button-sharp--grey:hover {
+  background: #fff;
+  color: #495057
+}

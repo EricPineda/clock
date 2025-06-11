@@ -7,12 +7,15 @@
 }
 
 body{
-    background: url(../img/fondo1.png);
-    /*background-size: cover;*/
+    background: url(../img/fondo25.png);
     color: #fff;
     font-size: 18px;
     background-attachment: fixed;
     background-size: cover;
+}
+
+.body2{
+    background: url(../img/fondo10.png);
 }
 
 .wrap{
@@ -205,7 +208,7 @@ body{
     
 }
 
-.contenedorBotones a {
+.contenedorBotones .boton {
     width: 70px;
     height: 70px;
     display: block;
@@ -227,12 +230,13 @@ body{
 
 }
 
-.contenedorBotones a:hover {
+.contenedorBotones .boton:hover {
     color:rgba(0, 0, 0, 0.608);
     background-color: #fff;
     border-color: rgba(178, 174, 174, 0.69);
     transition: all 1s;
-    animation: iconoAnimacion 2s ease-in-out infinite;
+    animation: iconoAnimacion 1.5s ease-in-out;
+    cursor: pointer;
 }
 
 @keyframes iconoAnimacion {
