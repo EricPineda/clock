@@ -38,13 +38,3 @@ btnModalAceptar.onclick = function() {
 }
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const boton = document.getElementById("btnModalAceptar");
-  
-  if (boton) {
-    boton.addEventListener("click", function (event) {
-      event.preventDefault();
-      return false;
-    });
-  }
-});
