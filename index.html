@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript, reloj">
+    <!--<meta http-equiv = "content-language" content = "es-es">-->
     <title>Reloj Digital 12 Horas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../clock/css/estilos.css" />
+    <link rel="stylesheet" href="../clock/css/modal.css" />
+    <link rel="stylesheet" href="../clock/css/dropdown.css"/>
     <link href="../clock/assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="../clock/assets/fontawesome/css/brands.css" rel="stylesheet" />
     <link href="../clock/assets/fontawesome/css/solid.css" rel="stylesheet" />
-    
-    
-    
+    <!--<link rel="alternate" hreflang="es-es">-->
+
+
+
 </head>
+
 <body>
 
     <div class="asideBar" id="asideBar">
@@ -20,7 +28,7 @@
         <div class="contenedorTituloBar">
             <p class="tituloBar">SUCEDIÓ EN ESTE DÍA</p>
         </div>
-        
+
 
         <div id="contenedorCarga" class="contenedorCarga">
             <div id="carga" class="carga">
@@ -28,49 +36,113 @@
         </div>
 
     </div>
-    
+
     <div class="wrap">
-            <div class="widget">
-                <div class="fecha">
-                    <p id="diaSemana" class="diaSemana"></p>
-                    <p id="dia" class="dia"></p>
-                    <p>de </p>
-                    <p id="mes" class="mes"></p>
-                    <p>del </p>
-                    <p id="year" class="year"></p>
+        <div class="widget">
+            <div class="fecha">
+                <p id="diaSemana" class="diaSemana"></p>
+                <p id="dia" class="dia"></p>
+                <p>de </p>
+                <p id="mes" class="mes"></p>
+                <p>del </p>
+                <p id="year" class="year"></p>
+            </div>
+
+            <div class="reloj">
+                <p id="horas" class="horas"></p>
+                <p>:</p>
+                <p id="minutos" class="minutos"></p>
+                <p>:</p>
+
+                <div class="caja-segundos">
+                    <p id="ampm" class="ampm"></p>
+                    <p id="segundos" class="segundos"></p>
                 </div>
 
-                <div class="reloj">
-                    <p id="horas" class="horas"></p>
-                    <p>:</p>
-                    <p id="minutos" class="minutos"></p>
-                    <p>:</p>
-
-                    <div class="caja-segundos">
-                        <p id="ampm" class="ampm"></p>
-                        <p id="segundos" class="segundos"></p>
-                    </div>
-
-                </div>
+            </div>
 
         </div>
     </div>
 
     <div class="contenedorBotones">
-        <a href="javascript:void(0);" class="boton"><i class="fa-regular fa-gear"></i></a>
+        <!--<a href="javascript:void(0);" class="boton" id="botonFondo"> -->
+        <div class="boton" id="botonFondo">
+            <i class="fa-regular fa-gear"></i>
+        </div>
+        <!-- </a> -->
     </div>
 
 
+    <div id="miModal" class="modal">
+        <div id="flex" class="flex">
+            <div class="contenido-modal">
+                <div class="modal-header">
+                    <h3>Configuración: fondo</h3>
+                    <i class="fa-solid fa-circle-xmark close" id="close"></i>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <span class="choose">Cambiar el fondo de la página</span>
 
-    <!-- <div class="card">
-  <div class="card-inner">
-    <div class="card-front">Front Side</div>
-    <div class="card-back">Back Side</div>
-  </div>
-</div> -->
+                        <div class="dropdown" id="dropdown">
+                            <div class="select">
+                                <span>Seleccionar fondo</span>
+                                <i class="fa fa-chevron-left"></i>
+                            </div>
+                            <input type="hidden" name="background" id="background">
+                            <ul class="dropdown-menu">
+                                <li id="1">Atardecer cósmico</li>
+                                <li id="8">Bosque de neón</li>
+                                <li id="9">Océano turquesa</li>
+                                <li id="10">Pastel</li>
+                                <li id="12">Pasión intensa</li>
+                                <li id="19">Lavanda galáctica</li>
+                                <li id="21">Seda lapislazuli</li>
+                                <li id="23">Menta suave</li>
+                                <li id="24">Ocaso tropical</li>
+                                <li id="25">Frescura de caramelo</li>
+                            </ul>
+                        </div>
+
+                        <span class="msg"></span>
+                    </div>
+
+
+                     <span class="choose">Vista previa</span>
+                    <div class="contenedorPreview" id="contenedorPreview">
+                        <img src="../clock/img/fondo1.png" alt="" id="imgPreview" class="imgPreview"/>
+                    </div>
+
+                    <div class="contenedorBtnAceptar">
+                        <button class="css-button css-button-sharp css-button-sharp--grey" id="btnModalAceptar" disabled>Aceptar</button>
+                    </div>
+                </div>
+                
+                <!--
+                <div class="modal-footer">
+                    <h3>Hecho</h3>
+                </div>
+                 -->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Front Side</div>
+            <div class="card-back">Back Side</div>
+        </div>
+    </div>
+    -->
 
     <script src="../clock/js/reloj.js"></script>
     <script src="../clock/js/asideBar.js"></script>
+    <script src="../clock/js/modal.js"></script>
+    <script src="../clock/js/dropdown.js"></script>
 
 </body>
+
 </html>
