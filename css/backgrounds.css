@@ -1,0 +1,65 @@
+.background-default{
+    background: url(../img/fondo10.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background-fondo1{
+    background: url(../img/fondo1.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background-fondo2{
+    background: url(../img/fondo2.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background-fondo3{
+    background: url(../img/fondo3.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background-fondo4{
+    background: url(../img/fondo4.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background-fondo5{
+    background: url(../img/fondo5.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background-fondo6{
+    background: url(../img/fondo6.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background-fondo7{
+    background: url(../img/fondo7.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background-fondo8{
+    background: url(../img/fondo8.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background-fondo9{
+    background: url(../img/fondo9.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background-fondo10{
+    background: url(../img/fondo10.png);
+    background-attachment: fixed;
+    background-size: cover;
+}

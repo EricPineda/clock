@@ -31,7 +31,7 @@ document.querySelectorAll('.dropdown .dropdown-menu li').forEach(item => {
     const input = dropdown.querySelector('input');
 
     const imgPreview = document.getElementById("imgPreview");
-    const nombreImagen = 'fondo' + this.getAttribute('id') + '.png';
+    const nombreImagen = this.getAttribute('id') + '.png';
     imgPreview.setAttribute("src","../clock/img/"+nombreImagen);
 
 
