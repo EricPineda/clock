@@ -6,16 +6,10 @@
     box-sizing: border-box;
 }
 
-body{
-    background: url(../img/fondo25.png);
+
+.body-default{
     color: #fff;
     font-size: 18px;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.body2{
-    background: url(../img/fondo10.png);
 }
 
 .wrap{

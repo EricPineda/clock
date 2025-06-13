@@ -29,12 +29,25 @@ window.onclick = function(event) {
 
 btnModalAceptar.onclick = function() {
   const background = document.getElementById("background");
-   const nombreImagen = 'fondo' + background.value + '.png';
-  console.log(background.value);
-  document.body.style.background="url('../clock/img/"+ nombreImagen + "')";
+  //const nombreImagen = 'fondo' + background.value + '.png';
+  //console.log(background.value);
+  /*document.body.style.background="url('../clock/img/"+ nombreImagen + "')";
   document.body.style.backgroundAttachment = 'fixed';
-  document.body.style.backgroundSize='cover';
+  document.body.style.backgroundSize='cover';*/
+
+
+  /*document.body.classList.remove('backgroud-default');
+  document.body.classList.add('backgroud-fondo1');*/
+  const nombreClase = background.value;
+  const claseGuardada = localStorage.getItem('background-class');
+
+  console.log(claseGuardada);
+  document.body.classList.remove(claseGuardada);
+  document.body.classList.add('background-'+nombreClase)
+  localStorage.setItem('background-class','background-'+nombreClase);
+  
 
 }
+
 
 
