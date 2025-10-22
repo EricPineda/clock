@@ -2,64 +2,83 @@
     background: url(../img/fondo10.png);
     background-attachment: fixed;
     background-size: cover;
+    background-repeat:round;
+    
 }
 
 .background-fondo1{
     background: url(../img/fondo1.png);
     background-attachment: fixed;
     background-size: cover;
+    background-repeat:round;
 }
 
 .background-fondo2{
     background: url(../img/fondo2.png);
     background-attachment: fixed;
     background-size: cover;
+    background-repeat:round;
 }
 
 .background-fondo3{
     background: url(../img/fondo3.png);
     background-attachment: fixed;
     background-size: cover;
+    background-repeat:round;
 }
 
 .background-fondo4{
     background: url(../img/fondo4.png);
     background-attachment: fixed;
     background-size: cover;
+    background-repeat:round;
 }
 
 .background-fondo5{
     background: url(../img/fondo5.png);
     background-attachment: fixed;
     background-size: cover;
+    background-repeat:round;
 }
 
 .background-fondo6{
     background: url(../img/fondo6.png);
     background-attachment: fixed;
     background-size: cover;
+    background-repeat:round;
 }
 
 .background-fondo7{
     background: url(../img/fondo7.png);
     background-attachment: fixed;
     background-size: cover;
+    background-repeat:round;
 }
 
 .background-fondo8{
     background: url(../img/fondo8.png);
     background-attachment: fixed;
     background-size: cover;
+    background-repeat:round;
 }
 
 .background-fondo9{
     background: url(../img/fondo9.png);
     background-attachment: fixed;
     background-size: cover;
+    background-repeat:round;
 }
 
 .background-fondo10{
     background: url(../img/fondo10.png);
     background-attachment: fixed;
     background-size: cover;
+    background-repeat:round;
+}
+
+.background-fondo11{
+    background: url(../img/fondo11.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat:round;
 }

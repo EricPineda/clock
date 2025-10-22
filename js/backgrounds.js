@@ -20,6 +20,8 @@ if (localStorage.getItem('background-class') === 'background-default'){
     document.body.classList.add('background-fondo9');
 }else if (localStorage.getItem('background-class') === 'background-fondo10'){
     document.body.classList.add('background-fondo10');
+}else if (localStorage.getItem('background-class') === 'background-fondo11'){
+    document.body.classList.add('background-fondo11');
 }else if (localStorage.getItem('background-class') === null ){
     document.body.classList.add('background-default');
     localStorage.setItem('background-class','background-default');

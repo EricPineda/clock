@@ -34,9 +34,14 @@ document.querySelectorAll('.dropdown .dropdown-menu li').forEach(item => {
     const nombreImagen = this.getAttribute('id') + '.png';
     imgPreview.setAttribute("src","../clock/img/"+nombreImagen);
 
+    
+    const textoPrincipal = Array.from(this.childNodes)
+      .filter(node => node.nodeType === Node.TEXT_NODE)
+      .map(node => node.nodeValue.trim())                
+      .join(' ')                                         
+      .trim();
 
-
-    if (span) span.textContent = this.textContent;
+    if (span) span.textContent = textoPrincipal;
     if (input) input.value = this.getAttribute('id');
   });
 });
