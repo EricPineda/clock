@@ -9,13 +9,13 @@
     <title>Reloj Digital 12 Horas</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../clock/css/estilos.css" />
-    <link rel="stylesheet" href="../clock/css/backgrounds.css" />
-    <link rel="stylesheet" href="../clock/css/modal.css" />
-    <link rel="stylesheet" href="../clock/css/dropdown.css"/>
-    <link href="../clock/assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
-    <link href="../clock/assets/fontawesome/css/brands.css" rel="stylesheet" />
-    <link href="../clock/assets/fontawesome/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/backgrounds.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/dropdown.css"/>
+    <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="assets/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="assets/fontawesome/css/solid.css" rel="stylesheet" />
     <!--<link rel="alternate" hreflang="es-es">-->
 
 
@@ -78,16 +78,16 @@
         <div id="flex" class="flex">
             <div class="contenido-modal">
                 <div class="modal-header">
-                    <h3>Configuración: fondo</h3>
+                    <h3>Configuración: cambiar fondo</h3>
                     <i class="fa-solid fa-circle-xmark close" id="close"></i>
                 </div>
                 <div class="modal-body">
                     <div class="container">
-                        <span class="choose">Cambiar el fondo de la página</span>
+                        <span class="choose">Fondo seleccionado</span>
 
                         <div class="dropdown" id="dropdown">
                             <div class="select">
-                                <span>Seleccionar fondo</span>
+                                <span id="fondoTitulo">Seleccionar fondo</span>
                                 <i class="fa fa-chevron-left"></i>
                             </div>
                             <input type="hidden" name="background" id="background">
@@ -106,13 +106,13 @@
                             </ul>
                         </div>
 
-                        <span class="msg"></span>
+                        <!-- <span class="msg"></span> -->
                     </div>
 
 
                      <span class="choose">Vista previa</span>
                     <div class="contenedorPreview" id="contenedorPreview">
-                        <img src="../clock/img/fondo1.png" alt="" id="imgPreview" class="imgPreview"/>
+                        <img  alt="" id="imgPreview" class="imgPreview"/>
                     </div>
 
                     <div class="contenedorBtnAceptar">
@@ -140,11 +140,12 @@
     </div>
     -->
 
-    <script src="../clock/js/reloj.js"></script>
-    <script src="../clock/js/asideBar.js"></script>
-    <script src="../clock/js/modal.js"></script>
-    <script src="../clock/js/dropdown.js"></script>
-    <script src="../clock/js/backgrounds.js"></script>
+    <script src="js/reloj.js"></script>
+    <script src="js/asideBar.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/backgrounds.js"></script>
+   
 
 </body>
 
