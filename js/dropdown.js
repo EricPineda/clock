@@ -32,7 +32,7 @@ document.querySelectorAll('.dropdown .dropdown-menu li').forEach(item => {
 
     const imgPreview = document.getElementById("imgPreview");
     const nombreImagen = this.getAttribute('id') + '.png';
-    imgPreview.setAttribute("src","../clock/img/"+nombreImagen);
+    imgPreview.setAttribute("src","img/"+nombreImagen);
 
     
     const textoPrincipal = Array.from(this.childNodes)

@@ -1,5 +1,6 @@
 // Get the modal
 var modal = document.getElementById("miModal");
+var contenidoModal = document.getElementById("contenidoModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("botonFondo");
@@ -11,18 +12,35 @@ var flex = document.getElementById("flex");
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
+  contenidoModal.classList.remove('modal-close');
+  contenidoModal.classList.add('modal-open');
   modal.style.display = "block";
+  
 }
 
 // When the user clicks on <span> (x), close the modal
 btnClose.onclick = function() {
-  modal.style.display = "none";
+  contenidoModal.classList.remove('modal-open');
+  contenidoModal.classList.add('modal-close');
+
+ contenidoModal.addEventListener('animationend', function handler() {
+    modal.style.display = 'none';
+    contenidoModal.removeEventListener('animationend', handler);
+  });
+  
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == flex) {
-    modal.style.display = "none";
+    
+contenidoModal.classList.remove('modal-open');
+  contenidoModal.classList.add('modal-close');
+
+ contenidoModal.addEventListener('animationend', function handler() {
+    modal.style.display = 'none';
+    contenidoModal.removeEventListener('animationend', handler);
+    });
   }
 }
 
