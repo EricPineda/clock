@@ -139,6 +139,13 @@
     margin: 5px;
 }
 
+.linkArticulo{
+    margin: 5px;
+    text-decoration: none;
+    color: #23bba9;
+    font-weight: 400;
+}
+
 /********************/
 
 .contenedorCarga{
