@@ -71,6 +71,9 @@
     padding: 10px;
     font-family: "Montserrat", Arial;
     margin-right: 1em;
+
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -87,8 +90,6 @@
 
     
 }
-
-
 
 .tituloBar::before {
     content: "";
@@ -136,6 +137,13 @@
     border-style: solid;
     border-color: rgba(214, 226, 220, 0.9);
     margin: 5px;
+}
+
+.linkArticulo{
+    margin: 5px;
+    text-decoration: none;
+    color: #23bba9;
+    font-weight: 400;
 }
 
 /********************/
@@ -195,6 +203,7 @@
     background-color: #fff; */
 
     /*margin-top: 40vh;*/
+    width: 200px;
     padding: 10px;
     text-align: center;
     position: relative;
@@ -208,7 +217,6 @@
     display: block;
     border-radius: 50%;
     color: #fff;
-    /* background-color: #000; */
     text-decoration: none;
     font-size: 28px;
     text-align: center;
@@ -220,16 +228,17 @@
     align-items: center;
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.12);
-    transition: all 1s;
-
+    transition: all 1.5s;
+    animation: iconoAnimacion 4s ease infinite;
+    animation-play-state: paused;
+    animation-fill-mode: forwards; 
 }
 
 .contenedorBotones .boton:hover {
     color:rgba(0, 0, 0, 0.608);
     background-color: #fff;
     border-color: rgba(178, 174, 174, 0.69);
-    transition: all 1s;
-    animation: iconoAnimacion 1.5s ease-in-out;
+    /*transition: all 1s;*/
     cursor: pointer;
 }
 
@@ -239,11 +248,43 @@
     }
 
     to{
-        transform: rotate(180deg);
+        transform: rotate(360deg);
     }
     
 }
 
+/****************************/
+
+.btnRecarga{
+    order: 99;
+    align-self: center;
+    margin-bottom: -2em;
+    border-radius: 100%; 
+    padding: 13px;
+    border:2px solid rgba(231, 231, 231, 0.691);
+    color:white;
+    background-color: #23bba9;
+    animation: btnRecargaAnimacion 2s linear infinite;
+    animation-play-state: paused;
+    animation-fill-mode: forwards; 
+    display: flex;
+}
+
+.btnRecarga:hover{
+    cursor: pointer;
+}
+
+
+@keyframes btnRecargaAnimacion {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+
+}
 
 /**
 
