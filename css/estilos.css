@@ -228,8 +228,8 @@
     align-items: center;
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.12);
-    transition: all 1s;
-    animation: iconoAnimacion 2s ease-in-out infinite;
+    transition: all 1.5s;
+    animation: iconoAnimacion 4s ease infinite;
     animation-play-state: paused;
     animation-fill-mode: forwards; 
 }
